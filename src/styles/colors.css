@@ -1,0 +1,95 @@
+body {
+  --foregroundPrimary: #222;
+  --foregroundSecondary: #ffffff;
+  --backgroundPrimary: #fff;
+  --backgroundSecondary: #fff;
+  --bg-black:rgb(0, 0, 0);
+  --border-col:rgba(0, 0, 0, 0.233);
+}
+
+body .rom-head {
+  color: var(--backgroundSecondary);
+}
+
+html.dark body {
+  --cool-text:#FFC75F;
+  --foregroundPrimary: #ffffff;
+  --foregroundSecondary: #000;
+  --backgroundPrimary: rgb(0, 0, 0);
+  --backgroundSecondary: rgb(0,0,0);
+  --bg-black:rgb(255, 255, 255);
+  --border-col:rgba(255, 255, 255, 0.685);
+}
+
+html.dark body .hero-h1 {
+  color: var(--foregroundPrimary);
+}
+
+html.dark body .hero-span {
+  color: var(--foregroundPrimary);
+}
+
+html.dark body .header .navbar .brand {
+  color: var(--foregroundPrimary);
+}
+
+html.dark body .header .navbar .menu-item .a {
+  color: var(--foregroundPrimary);
+}
+
+html.dark body .rom-head {
+  color: var(--backgroundPrimary);
+}
+
+html.dark body .Main2 {
+  background-color: var(--backgroundSecondary);
+  color: var(--foregroundPrimary);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --cool-text:#FFC75F;
+    --foregroundPrimary: #ffffff;
+    --foregroundSecondary: #000;
+    --backgroundPrimary: rgb(0, 0, 0);
+    --backgroundSecondary: rgb(0,0,0);
+    --bg-black:rgb(255, 255, 255);
+    --border-col:rgba(255, 255, 255, 0.685);
+  }
+  body .hero-h1 {
+    color: var(--foregroundPrimary);
+  }
+  body .hero-span {
+    color: var(--foregroundPrimary);
+  }
+  body .header .navbar .brand {
+    color: var(--foregroundPrimary);
+  }
+  body .header .navbar .menu-item .a {
+    color: var(--foregroundPrimary);
+  }
+  body .rom-head {
+    color: var(--backgroundPrimary);
+  }
+  body .Main2 {
+    background-color: var(--backgroundSecondary);
+    color: var(--foregroundPrimary);
+  }
+}
+
+.main-div {
+  background: var(--backgroundPrimary);
+}
+
+html.dark .main-div {
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-div {
+    -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+/*# sourceMappingURL=colors.css.map */

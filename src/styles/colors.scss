@@ -1,0 +1,80 @@
+$mint: #ffffff;
+$mintLight: #ffffff;
+$royalPurple: #ffffff;
+$white: #fff;
+
+@mixin whenDark {
+	html.dark & {
+		@content;
+	}
+
+	// Ensure dark mode still works if JS is disabled (e.g. if you are pre-rendering your site)
+	@media (prefers-color-scheme: dark) {
+		& {
+			@content;
+		}
+	}
+}
+
+
+body {
+  --foregroundPrimary: #222;
+  --foregroundSecondary: #{$mint};
+  --backgroundPrimary: #{$white};
+  --backgroundSecondary: #{#fff};
+  --bg-black:rgb(0, 0, 0);
+  --border-col:rgba(0, 0, 0, 0.233);
+  .rom-head{
+    color: var( --backgroundSecondary);
+  }
+
+
+  @include whenDark {
+    --cool-text:#FFC75F;
+    --foregroundPrimary: #ffffff;
+    --foregroundSecondary: #000;
+    --backgroundPrimary: rgb(0, 0, 0);
+    --backgroundSecondary: rgb(0,0,0);  
+    --bg-black:rgb(255, 255, 255);
+    --border-col:rgba(255, 255, 255, 0.685);
+    .hero-h1{
+      color: var(--foregroundPrimary);
+    }
+    
+    .hero-span{
+      color: var(--foregroundPrimary);
+    }
+    .header .navbar .brand {
+      color: var(--foregroundPrimary);
+    }
+    .header .navbar .menu-item .a{
+      color: var(--foregroundPrimary);
+    }
+    .rom-head{
+      color: var( --backgroundPrimary);
+    }
+    
+    .Main2{
+      background-color: var(--backgroundSecondary);
+      color: var(--foregroundPrimary);
+    
+    }
+  
+  }
+
+  
+
+}
+
+
+
+.main-div{
+    
+    background: var(--backgroundPrimary);
+  
+  
+    @include whenDark {
+      box-shadow: 0 4px 20px rgba(#000, 0.5);
+    }
+  }
+  
